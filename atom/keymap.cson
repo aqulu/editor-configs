@@ -26,6 +26,9 @@
 'body':
   'ctrl-f4': 'core:close'
 
+'.editor':
+  'ctrl-backspace': 'editor:delete-to-previous-word-boundary'
+  'ctrl-delete': 'editor:delete-to-next-word-boundary'
 
 # You can find more information about keymaps in these guides:
 # * https://atom.io/docs/latest/using-atom-basic-customization#customizing-key-bindings
