@@ -1,2 +1,2 @@
 # ATOM configuration files
-stored in ~/.atom/
+stored under ~/.atom/
