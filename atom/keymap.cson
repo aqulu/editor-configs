@@ -30,6 +30,11 @@
   'ctrl-backspace': 'editor:delete-to-previous-word-boundary'
   'ctrl-delete': 'editor:delete-to-next-word-boundary'
 
+
+'atom-text-editor:not([mini])':
+	'alt-up': 'editor:move-line-up'
+	'alt-down': 'editor:move-line-down'
+
 # You can find more information about keymaps in these guides:
 # * https://atom.io/docs/latest/using-atom-basic-customization#customizing-key-bindings
 # * https://atom.io/docs/latest/behind-atom-keymaps-in-depth
