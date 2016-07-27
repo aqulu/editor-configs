@@ -11,3 +11,6 @@ fixed scrolling behaviour in linux mint (forces the usage of GTK2) by adding fol
     2
 
 located in the eclipse directory 
+
+# expanding explorer tree node with arrow keys
+copy .gtkrc-2.0 to homedirectory (~/.gtkrc-2.0)
