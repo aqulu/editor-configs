@@ -8,6 +8,8 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rust-lang/rust.vim'
+Plugin 'urthbound/vim-runners'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -16,3 +18,4 @@ syntax on
 set mouse=a
 
 autocmd FileType html,xml,xsl source ~/.vim/scripts/closetag.vim 
+autocmd vimenter * NERDTree
