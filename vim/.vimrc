@@ -10,6 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'urthbound/vim-runners'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -19,3 +20,4 @@ set mouse=a
 
 autocmd FileType html,xml,xsl source ~/.vim/scripts/closetag.vim 
 autocmd vimenter * NERDTree
+let g:nerdtree_tabs_open_on_console_startup=1
