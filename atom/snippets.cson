@@ -23,17 +23,29 @@
 '.source.php':
   'error.log':
     'prefix': 'dbg'
-    'body': """foreach ($arr as $key => $val) {
-				error_log($key . ' = ' . $val);
+    'body': """foreach (\$${1:arr} as \$${2:key} => \$${3:val}) {
+				error_log(\$${2:key} . ' = ' . \$${3:val});
 		}"""
 
-	'this':
-	  'prefix': 'this'
-	  'body': '$this->'
+'.text.php':
+  'bladeforeach':
+    'prefix': 'bforeach'
+    'body': """\@foreach (\$${1:entries} as \$${2:entry})
+				{{ \$${2:entry}-> }}
+		\@endforeach"""
 
-  '@foreach':
-    'prefix': '@foreach'
-    'body': """@foreach ($entries as $entry)
-				{{ $entry-> }}
-		@endforeach
-		"""
+  'map-all':
+    'prefix': 'mapall'
+    'body': """map(function(\$${1:e}) {
+				return \$${1:e};
+		})->all();"""
+
+  'map-all-arrow':
+    'prefix': '.map'
+    'body': """->map(function(\$${1:e}) {
+				return \$${1:e};
+		})->all();"""
+
+  'dot-to-arrow':
+    'prefix': '.'
+    'body': '->'
