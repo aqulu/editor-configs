@@ -14,13 +14,11 @@
       "language-mustache"
       "language-clojure"
     ]
+    telemetryConsent: "no"
   editor:
     autoIndentOnPaste: false
-    fontSize: 12
+    fontSize: 13
     invisibles: {}
     showIndentGuide: true
-    tabType: "hard"
-  "exception-reporting":
-    userId: "4c0c15fe-fc10-b4ec-8ac0-5046c840a195"
   welcome:
     showOnStartup: false
